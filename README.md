@@ -12,7 +12,4 @@ Contains the following plugins:
 |Visualisation - network | [Juggl](https://github.com/HEmile/juggl) |
 |Visualisation - spatial | [Leaflet](https://github.com/valentine195/obsidian-leaflet-plugin) |
 |Utility - templating | [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-
-
-
-
+|Utility - data querying | [Dataview](https://github.com/blacksmithgu/obsidian-dataview)|
