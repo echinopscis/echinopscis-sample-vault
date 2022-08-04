@@ -1,6 +1,15 @@
 # echinopscis-sample-vault
 A sample [obsidian](https://obsidian.md) vault, preconfigured for biodiversity informatics
 
+## How to use
+
+1. [Download](https://obsidian.md/download) and install Obsidian for your operating system. 
+1. [Download](https://github.com/echinopscis/echinopscis-sample-vault/releases/download/v0.0.1/echinopscis.zip) this sample vault (zipped) and extract to a directory on your computer.
+1. Open Obsidian, and select "Open folder as vault". Choose the sample vault that you extracted in the previous step.
+1. Explore - or work through the steps listed from the "start here" page.
+
+## Contents
+
 Contains the following plugins:
 
 |Function |Plugin / script | Dependencies |
@@ -16,3 +25,7 @@ Contains the following plugins:
 |Utility - data querying | [Dataview](https://github.com/blacksmithgu/obsidian-dataview)| |
 |User interface - folder differentiation | [Icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) | |
 |User interface - definition of terms | [Dictionary](https://github.com/phibr0/obsidian-dictionary) | |
+
+## Contributing
+
+Comments are welcome - please use the github issue tracker associated with this project: [echinopscis/echinopscis-sample-vault/issues](https://github.com/echinopscis/echinopscis-sample-vault/issues)
