@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "livePreview": false,
+  "defaultViewMode": "preview",
+  "userIgnoreFilters": [
+    "scripts/",
+    "templates/"
+  ]
+}

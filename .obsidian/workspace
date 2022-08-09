@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "e075cf5ab5ed1249",
+    "type": "split",
+    "children": [
+      {
+        "id": "17624dad7dd9143e",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c59e2101293d0f2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d76598eef9044b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00adc7e4663a2913",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "60729263a74b09ef",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6921a0f0e41eedda",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8613dd05ce9a4a57",
+    "type": "split",
+    "children": [
+      {
+        "id": "52d9b62b54849e4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "580f8240f04a7cc5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "9959a2e28eeb42cd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d2b52d722ec8fa8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9c1ee17b2d8f587f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "76b0957762bd4766",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "56ba11349d66e909",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          },
+          {
+            "id": "d3194ccbb565b744",
+            "type": "leaf",
+            "state": {
+              "type": "dictionary-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245.9287109375,
+    "collapsed": true
+  },
+  "active": "17624dad7dd9143e",
+  "lastOpenFiles": [
+    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (Herbarium).md",
+    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (K).md",
+    "remote-data/ipni/Poa alpina var. divaricata (Vill.) Mutel.md",
+    "remote-data/ipni/Poa divaricata Vill..md",
+    "remote-data/bionomia/Adeline Knapp.md",
+    "remote-data/grscicoll/US(Herbarium)-Smithsonian Institution.md",
+    "remote-data/grscicoll/PACE(Herbarium)-Pace University.md",
+    "remote-data/grscicoll/State University of New York(BING)Herbarium.md",
+    "remote-data/grscicoll/(BING)Herbarium.md",
+    "remote-data/grscicoll/BINGHerbarium.md"
+  ]
+}

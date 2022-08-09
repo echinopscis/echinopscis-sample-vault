@@ -1,0 +1,110 @@
+{
+  "choices": [
+    {
+      "id": "d299d57a-9df1-4dc1-a8f0-48d5549780f3",
+      "name": "Bionomia",
+      "type": "Macro",
+      "command": true,
+      "macroId": "21c2fef8-5213-412a-b6ba-813864a52248"
+    },
+    {
+      "id": "cb531a63-4087-4817-97c3-cad7cd697d82",
+      "name": "IPNI",
+      "type": "Macro",
+      "command": true,
+      "macroId": "2852fc55-3e19-4663-b030-3f28e3a100e0"
+    },
+    {
+      "id": "9115266a-956b-4ea0-aad7-7ad0b9e18fb8",
+      "name": "GBIF occurrences",
+      "type": "Macro",
+      "command": true,
+      "macroId": "13defa85-7ea9-489d-a52d-dbe393e46af1"
+    },
+    {
+      "id": "01002e67-3200-47ab-bb21-dc069cc97902",
+      "name": "GRSciColl",
+      "type": "Macro",
+      "command": true,
+      "macroId": "5e742175-b05f-4bdb-9188-7d614873efb3"
+    }
+  ],
+  "macros": [
+    {
+      "name": "GBIF",
+      "id": "13defa85-7ea9-489d-a52d-dbe393e46af1",
+      "commands": [
+        {
+          "name": "gbifocc",
+          "type": "UserScript",
+          "id": "aed43b18-e6ab-4c09-8524-bb81e7c8f96b",
+          "path": "scripts/gbifocc.js",
+          "settings": {
+            "Filename format:": "{{ffalias}} - {{year}} ({{collectionCode}})",
+            "Template file:": "templates/gbifocc.md",
+            "Destination folder:": "remote-data/gbif-occurrences",
+            "Retrieve linked occurrences": true,
+            "Interpret numbers as recordnumbers?": true
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "IPNI",
+      "id": "2852fc55-3e19-4663-b030-3f28e3a100e0",
+      "commands": [
+        {
+          "name": "ipni",
+          "type": "UserScript",
+          "id": "0c7dc7cc-bb6d-460d-b4f5-18b297202603",
+          "path": "scripts/ipni.js",
+          "settings": {
+            "Filename format:": "{{~fullname~}}",
+            "Template file:": "templates/ipni.md",
+            "Destination folder:": "remote-data/ipni",
+            "Retrieve linked names:": true
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "GRSciColl",
+      "id": "5e742175-b05f-4bdb-9188-7d614873efb3",
+      "commands": [
+        {
+          "name": "grscicoll",
+          "type": "UserScript",
+          "id": "de310da0-86f9-479c-aaab-6ce3093ad96f",
+          "path": "scripts/grscicoll.js",
+          "settings": {
+            "Filename format:": "{{~code~}}({{~name~}})-{{~institutionName~}}",
+            "Template file:": "templates/grscicoll.md",
+            "Destination folder:": "remote-data/grscicoll"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Bionomia",
+      "id": "21c2fef8-5213-412a-b6ba-813864a52248",
+      "commands": [
+        {
+          "name": "bionomia",
+          "type": "UserScript",
+          "id": "e5918b92-9d79-4807-a5f6-41e4b9873aa6",
+          "path": "scripts/bionomia.js",
+          "settings": {
+            "Filename format:": "{{~fullname~}} {{~fn_lifespan~}}",
+            "Template file:": "templates/bionomia.md",
+            "Destination folder:": "remote-data/bionomia"
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line"
+}

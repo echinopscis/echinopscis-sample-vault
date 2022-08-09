@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-handlebar-helper-plugin",
+	"name": "Handlebar helper plugin",
+	"version": "1.0.1",
+	"minAppVersion": "0.12.0",
+	"description": "A simple plugin that exposes handlebar templating for use by QuickAdd scripts.",
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md",
+	"isDesktopOnly": false
+}
