@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "17624dad7dd9143e",
+        "id": "adc92fdd82bbeeb8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "preview",
+            "source": true
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#occurrence -tag:#type",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,11 +72,23 @@
         "type": "tabs",
         "children": [
           {
+            "id": "4d2b52d722ec8fa8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
             "id": "580f8240f04a7cc5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,19 +105,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "4d2b52d722ec8fa8",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "file": "README.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -110,23 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "76b0957762bd4766",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {}
-            }
-          },
-          {
-            "id": "56ba11349d66e909",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -138,24 +130,100 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
+      },
+      {
+        "id": "2bd970793fcdf771",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd985824de74cd29",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "README.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#type/HOLOTYPE",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14048348
+                      }
+                    },
+                    {
+                      "query": "tag:#type/ISOTYPE",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14069084
+                      }
+                    },
+                    {
+                      "query": "tag:#person",
+                      "color": {
+                        "a": 1,
+                        "rgb": 11392604
+                      }
+                    },
+                    {
+                      "query": "tag:#name",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6084188
+                      }
+                    },
+                    {
+                      "query": "tag:#collection",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6084269
+                      }
+                    }
+                  ],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0000000000000002,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.9287109375,
-    "collapsed": true
+    "width": 353.9287109375
   },
-  "active": "17624dad7dd9143e",
+  "active": "adc92fdd82bbeeb8",
   "lastOpenFiles": [
-    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (Herbarium).md",
-    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (K).md",
-    "remote-data/ipni/Poa alpina var. divaricata (Vill.) Mutel.md",
-    "remote-data/ipni/Poa divaricata Vill..md",
-    "remote-data/bionomia/Adeline Knapp.md",
-    "remote-data/grscicoll/US(Herbarium)-Smithsonian Institution.md",
-    "remote-data/grscicoll/PACE(Herbarium)-Pace University.md",
-    "remote-data/grscicoll/State University of New York(BING)Herbarium.md",
-    "remote-data/grscicoll/(BING)Herbarium.md",
-    "remote-data/grscicoll/BINGHerbarium.md"
+    "remote-data/ipni/Myrcia sect. Calyptranthes (Sw.) A.R.Lourenço & E.Lucas.md",
+    "remote-data/ipni/Cola acuminata (P.Beauv.) Schott &amp; Endl..md",
+    "remote-data/ipni/Solanum sanchez-vegae S.Knapp.md",
+    "remote-data/descriptions/Solanum sanchez-vegae.md",
+    "My new species.md",
+    "Four New Vining Species of Solanum (Dulcamaroid Clade) from Montane Habitats in Tropical America 1.md",
+    "remote-data/gbif-occurrences/A. López 8926 - 1981 (BOT).md",
+    "remote-data/gbif-occurrences/A. Sagástegui 16631 - 2001 (Botany).md",
+    "remote-data/gbif-occurrences/J. Mostacero 1326 - 1986 (Botany).md",
+    "remote-data/gbif-occurrences/Abundio Sagástegui Alva 16535 - 2001 (BOT).md"
   ]
 }

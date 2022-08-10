@@ -59,17 +59,23 @@ async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
 
-  let query = await getQuery();
+  var query = document.getSelection().toString();
+  if (typeof query != "string"){
+      query = null;
+  }
+  if (!query){
+    query = await getQuery();
+    query = query.searchTerms;
+  }
   if (!query) {
     notice("No query entered.");
     throw new Error("No query entered.");
   }
-  console.log(query.searchTerms);
 
-  let possibleOccs = await getOccurrencesByQueryParams(query.searchTerms);
+  let possibleOccs = await getOccurrencesByQueryParams(query);
   let selectedOcc = await promptUserForSelectingSuggestions(possibleOccs);
   if (selectedOcc){
-    selectedOcc = await augmentOccurrenceData(selectedOcc);
+    selectedOcc = await augmentOccurrenceData(selectedOcc, query);
     // Read in template as defined in settings:
     let template_file = app.vault.getAbstractFileByPath(Settings[TEMPLATE]);
     let template = await app.vault.read(template_file);
@@ -146,25 +152,16 @@ function decodeEntity(inputStr) {
 }
 
 async function getQuery(){
-  var query = document.getSelection().toString();
-  if (typeof query != "string"){
-      query = null;
-  }
-  if (query){
-    return query;
-  }
-  else{
-    return Promise.all([promptUserForSearchTerms()]).then(
-      ([searchTerms]) =>
-        new Promise((resolve, reject) => {
-          if (!searchTerms) {
-            notice("No query entered.");
-            reject(new Error("No query entered."));
-          }
-          resolve({ searchTerms });
-        })
-    );
-  }
+  return Promise.all([promptUserForSearchTerms()]).then(
+    ([searchTerms]) =>
+      new Promise((resolve, reject) => {
+        if (!searchTerms) {
+          notice("No query entered.");
+          reject(new Error("No query entered."));
+        }
+        resolve({ searchTerms });
+      })
+  );
 }
 
 function detectRecordNumber(query){
@@ -217,13 +214,16 @@ function buildOccurrencesData(occurrence) {
   return occurrence
 }
 
-async function augmentOccurrenceData(occurrence){
+async function augmentOccurrenceData(occurrence, query){
   const rbFirstFamilyName = await recordedBy2FirstFamilyName(occurrence.recordedBy);
   occurrence.rbFirstFamilyName = rbFirstFamilyName;
   occurrence.ffalias = `${occurrence.rbFirstFamilyName} ${occurrence.recordNumber}`;
 
   const location = formatLocation(occurrence);
   occurrence.location = location;
+
+  occurrence.searchterm = query;
+
   return occurrence;
 }
 

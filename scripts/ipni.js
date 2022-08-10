@@ -48,29 +48,36 @@ function init(params, settings) {
 async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
-  console.log(settings);
-  let query = await getQuery();
+
+  var query = document.getSelection().toString();
+  if (typeof query != "string"){
+      query = null;
+  }
+  if (!query){
+    query = await getQuery();
+    query = query.searchTerms;
+  }
   if (!query) {
     notice("No query entered.");
-    // throw new Error("No query entered.");
+    throw new Error("No query entered.");
+  }
+
+  console.log(query);
+
+  let possibleNames = await getNamesByQueryParams(query);
+  let selectedName = await promptUserForSelectingSuggestions(possibleNames);
+
+  if (selectedName){
+    if (selectedName.basionymId && Settings[RETRIEVE_LINKED_NAMES]){
+      var basionymName = await getByLsid(selectedName.basionymId);
+      console.log(basionymName);
+      await saveSelectedName(basionymName,selectedName,params, app, false);  
+    }
+    await saveSelectedName(selectedName,basionymName, params, app, true);
   }
   else{
-    console.log(query.searchTerms);
-    let possibleNames = await getNamesByQueryParams(query.searchTerms);
-    console.log(possibleNames);
-    let selectedName = await promptUserForSelectingSuggestions(possibleNames);
-    if (selectedName){
-      if (selectedName.basionymId && Settings[RETRIEVE_LINKED_NAMES]){
-        var basionymName = await getByLsid(selectedName.basionymId);
-        console.log(basionymName);
-        await saveSelectedName(basionymName,selectedName,params, app, false);  
-      }
-      await saveSelectedName(selectedName,basionymName, params, app, true);
-    }
-    else{
-      notice("No name selected");
-      // throw new Error("No name selected.");
-    }
+    notice("No name selected");
+    // throw new Error("No name selected.");
   }
 }
 
@@ -148,25 +155,16 @@ function decodeEntity(inputStr) {
 }
 
 async function getQuery(){
-  var query = document.getSelection().toString();
-  if (typeof query != "string"){
-      query = null;
-  }
-  if (query){
-    return query;
-  }
-  else{
-    return Promise.all([promptUserForSearchTerms()]).then(
-      ([searchTerms]) =>
-        new Promise((resolve, reject) => {
-          if (!searchTerms) {
-            notice("No query entered.");
-            reject(new Error("No query entered."));
-          }
-          resolve({ searchTerms });
-        })
-    );
-  }
+  return Promise.all([promptUserForSearchTerms()]).then(
+    ([searchTerms]) =>
+      new Promise((resolve, reject) => {
+        if (!searchTerms) {
+          notice("No query entered.");
+          reject(new Error("No query entered."));
+        }
+        resolve({ searchTerms });
+      })
+  );
 }
   
 function promptUserForSearchTerms(){

@@ -44,14 +44,20 @@ async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
 
-  let query = await getQuery();
+  var query = document.getSelection().toString();
+  if (typeof query != "string"){
+      query = null;
+  }
+  if (!query){
+    query = await getQuery();
+    query = query.searchTerms;
+  }
   if (!query) {
     notice("No query entered.");
     throw new Error("No query entered.");
   }
-  console.log(query.searchTerms);
 
-  let possibleColls = await getCollectionsByQueryParams(query.searchTerms);
+  let possibleColls = await getCollectionsByQueryParams(query);
   let selectedColl = await promptUserForSelectingSuggestions(possibleColls);
   if (selectedColl){
     // Read in template as defined in settings:
@@ -96,25 +102,16 @@ function decodeEntity(inputStr) {
 }
 
 async function getQuery(){
-  var query = document.getSelection().toString();
-  if (typeof query != "string"){
-      query = null;
-  }
-  if (query){
-    return query;
-  }
-  else{
-    return Promise.all([promptUserForSearchTerms()]).then(
-      ([searchTerms]) =>
-        new Promise((resolve, reject) => {
-          if (!searchTerms) {
-            notice("No query entered.");
-            reject(new Error("No query entered."));
-          }
-          resolve({ searchTerms });
-        })
-    );
-  }
+  return Promise.all([promptUserForSearchTerms()]).then(
+    ([searchTerms]) =>
+      new Promise((resolve, reject) => {
+        if (!searchTerms) {
+          notice("No query entered.");
+          reject(new Error("No query entered."));
+        }
+        resolve({ searchTerms });
+      })
+  );
 }
   
 function promptUserForSearchTerms(){

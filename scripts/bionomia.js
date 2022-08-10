@@ -45,15 +45,21 @@ function init(params, settings) {
 async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
-  console.log(settings);
-  let query = await getQuery();
+
+  var query = document.getSelection().toString();
+  if (typeof query != "string"){
+      query = null;
+  }
+  if (!query){
+    query = await getQuery();
+    query = query.searchTerms;
+  }
   if (!query) {
     notice("No query entered.");
     throw new Error("No query entered.");
   }
-  console.log(query.searchTerms);
 
-  let possibleProfiles = await getProfilesByQueryParams(query.searchTerms);
+  let possibleProfiles = await getProfilesByQueryParams(query);
   let selectedProfile = await promptUserForSelectingSuggestions(possibleProfiles);
   if (selectedProfile){
     selectedProfile.lifespan = cleanLifeSpan(selectedProfile.lifespan);
@@ -96,25 +102,16 @@ function decodeEntity(inputStr) {
 }
 
 async function getQuery(){
-  var query = document.getSelection().toString();
-  if (typeof query != "string"){
-      query = null;
-  }
-  if (query){
-    return query;
-  }
-  else{
-    return Promise.all([promptUserForSearchTerms()]).then(
-      ([searchTerms]) =>
-        new Promise((resolve, reject) => {
-          if (!searchTerms) {
-            notice("No query entered.");
-            reject(new Error("No query entered."));
-          }
-          resolve({ searchTerms });
-        })
-    );
-  }
+  return Promise.all([promptUserForSearchTerms()]).then(
+    ([searchTerms]) =>
+      new Promise((resolve, reject) => {
+        if (!searchTerms) {
+          notice("No query entered.");
+          reject(new Error("No query entered."));
+        }
+        resolve({ searchTerms });
+      })
+  );
 }
   
 function promptUserForSearchTerms(){

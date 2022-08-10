@@ -1,5 +1,5 @@
 ---
-aliases: ["{{recordedBy}} {{recordNumber}}", "{{ffalias}}", "{{catalogNumber}}"]
+aliases: ["{{recordedBy}} {{recordNumber}}", "{{ffalias}}", "{{catalogNumber}}", "{{{searchterm}}}"]
 title: "{{recordedBy}} {{recordNumber}}"
 gbifid: {{key}}
 {{#if decimalLatitude}}{{#if decimalLongitude}}location: [{{decimalLatitude}},{{decimalLongitude}}]{{/if}}{{/if}}
@@ -14,12 +14,7 @@ gbifid: {{key}}
 
 [{{key}}](https://gbif.org/occurrence/{{key}})
 
----
-
-```juggl
-local: "{{fileName}}"
-```
 
 #occurrence
 
-{{#if typeStatus}} #type/{{typeStatus}}{{/if}}
+{{#if typeStatus}}#type/{{typeStatus}}{{/if}}

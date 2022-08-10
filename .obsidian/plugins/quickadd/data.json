@@ -60,7 +60,7 @@
           "id": "0c7dc7cc-bb6d-460d-b4f5-18b297202603",
           "path": "scripts/ipni.js",
           "settings": {
-            "Filename format:": "{{~fullname~}}",
+            "Filename format:": "{{{fullname}}}",
             "Template file:": "templates/ipni.md",
             "Destination folder:": "remote-data/ipni",
             "Retrieve linked names:": true
