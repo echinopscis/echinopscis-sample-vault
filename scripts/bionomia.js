@@ -73,10 +73,17 @@ async function start(params, settings) {
     fileName = params.app.plugins.getPlugin('obsidian-handlebar-helper-plugin').compileAndRender(filename_template,selectedProfile);
     fileName = Settings[DESTINATION_DIR] + '/' + fileName.replace(ILLEGAL_OBSIDIAN_FILE_NAME_PATTERN, "") + '.md';
     console.log(fileName);
-    createdFile = await params.app.vault.create(fileName, rendered);
-    // Open it:
-    leaf = params.app.workspace.getUnpinnedLeaf();
-    await leaf.openFile(createdFile)  
+    try{
+      createdFile = await params.app.vault.create(fileName, rendered);
+      if (createdFile){
+        // Open it:
+        leaf = params.app.workspace.getUnpinnedLeaf();
+        await leaf.openFile(createdFile)  
+      }
+    }
+    catch(Error){
+      notice('Could not create file / already exists');
+    }
   }
   else{
     notice("No profile selected");

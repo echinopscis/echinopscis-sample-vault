@@ -103,11 +103,16 @@ async function saveSelectedName(selectedName, linkedName, params, app, open){
   let template = await app.vault.read(template_file);
   // Apply template to name object:
   let rendered = hbrenderer.compileAndRender(template,selectedName);
-  createdFile = await params.app.vault.create(fileName, rendered);
-  // Open it:
-  if (open){
-    leaf = params.app.workspace.getUnpinnedLeaf();
-    await leaf.openFile(createdFile)  
+  try{
+    createdFile = await params.app.vault.create(fileName, rendered);
+    if (createdFile && open){
+      // Open it:
+      leaf = params.app.workspace.getUnpinnedLeaf();
+      await leaf.openFile(createdFile)  
+    }
+  }
+  catch(Error){
+    notice('Could not create file / already exists');
   }
 }
 
