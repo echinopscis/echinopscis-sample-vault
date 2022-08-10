@@ -1,25 +1,26 @@
 ## Welcome
 
-This is the sample vault for "echinopscis" - an experiment in creating an extensible notebook for open science.
+This is the sample [[Glossary#Vault|vault]] for "echinopscis" - an experiment in creating an extensible notebook for open science.
 
-Its just a page in Obsidian, and its located on your local computer, so you can edit it. You can toggle between view and edit mode using <kbd>Ctrl</kbd>+<kbd>E</kbd>.
+These instructions are a [[Glossary#Page|page]] in Obsidian, formatted in Markdown and located on your local computer. You can edit this page - toggle between view and edit mode using <kbd>Ctrl</kbd>+<kbd>E</kbd>. 
+
+By default these instructions are "pinned" so that they will always be visible as we create new pages. Any new pages that you create or open by navigating a link will open in a separate pane to the right.
 
 ## About this demonstration
 
-This vault has been configured with some tools which enable easy access, linking and visualisation of biodiversity informatics data. These functions are available via the command palette in Obsidian - a searchable list of the functions of the system.
+This vault has been configured with some tools which enable easy access, linking and visualisation of biodiversity informatics data. 
 
-Some extra information about Obsidian and pointers to the Obsidian documentation has been included in this page in "tip" sections. These look like this - if you click on the coloured bar the contents will unroll.
+The rest of this page gives a worked example of how to use these. Occasionally, some extra information about Obsidian and pointers to the Obsidian documentation has been included in this page in "tip" sections. These look like this - if you click on the coloured bar the contents will unroll.
 
 >[!tip]- Tips and extra information about Obsidian
 >These tip boxes explain Obsidian concepts and show links to the main [Obsidian help pages](https://help.obsidian.md).
 
-The rest of this page gives a walkthough of these functions. You may find it useful to set up a "split view" and to "pin" this page so that you can read it alongside the pages that you create. 
-
-Open the command palette <kbd>Ctrl</kbd>+<kbd>P</kbd>. type "split", then select "split vertically". By default the system will now show you two copies of this page, side by side in two panes. You can pin one, either by clicking the pin icon in the title bar or using the command palette and selecting "toggle pin". Now any pages that you create or open will use the split pane, and you will always be able to read these instructions alongside your work. (You can drag the split so that one pane has more space if you prefer).
+Functions are available via the command palette in Obsidian - a searchable list of the functions of the system.
 
 >[!tip]- Command palette
 >Functions in Obsidian can be accessed through a searchable command palette - this is accessible using the key combination <kbd>Ctrl</kbd>+<kbd>P</kbd>
 >Read more about the command palette in its [Obsidian help page](https://help.obsidian.md/Plugins/Command+palette)
+
 
 ## Names
 Lets say that your research starts with a published plant name:
@@ -36,9 +37,9 @@ If you swap into edit mode (using <kbd>Ctrl</kbd> + <kbd>E</kbd>), you'll see th
 > See more about frontmatter in the [Obsidian help pages](https://help.obsidian.md/Advanced+topics/YAML+front+matter)
 
 
-If you select to add a name from IPNI that is a combination or a basionym - the linked record will also be added and a link will be shown in the page.
+If you select to add a name from IPNI that is a combination - the linked basionym record will also be added and the two name pages will be linked together. 
 
-As well as selecting the quickadd command via the command palette and then typing in a name - you can also highlight some text, then when you select the IPNI command, this will be passed into the search function so you don't have to retype it. This "search using highlighted text" function is available for each of the four biodiversity informatics quickadd scripts in the sample vault, i.e. IPNI names, GBIF-mediated occurrences, Bionomia profiles and GRSciColl institutions.
+As well as selecting the quickadd command via the command palette and then typing in a name - you can also highlight some text, then when you select the IPNI command, this will be passed into the search function so you don't have to retype it. This "search using highlighted text" function is available for each of the four biodiversity informatics quickadd scripts in the sample vault, i.e. names (from IPNI), specimens (GBIF-mediated occurrences), person profiles (from Bionomia) and collections (from GRSciColl).
 
 ## Specimens
 One thing an author does when publishing a new plant name is to cite the type specimens that they have selected. Many specimens are now digitised and available in GBIF so we will next search for the specimens using the collector name and number:
@@ -86,16 +87,6 @@ Obsidian is a notetaking and writing environment, so it has a few plugins which 
 
 Species descriptions use precise language and a whole set of technical terms. This sample vault has a term dictionary that can be used to give definitions. To view a term definition, highlight a term - e.g. "spinose", right click and select "look up" - a definition pane will open on the right hand side of the screen.
 
-## Visualisations
-
-### Spatial
-
-This vault has a mapping plugin enabled, which can read location coordinates from the frontmatter of pages, and use them to plot points on a map. Open the [[Map]] page to see a map with the collecting event coordinates plotted on it. The markers are active so that clicking on a marker will open the associated page.
-
-### Network
-
-In this example, we've created a small set of pages and established links between them. We can now use a network view to visualise the web of connections. Open the Juggl plugin by using the command palette, typing "Juggl" and selecting "Open global graph" - you should see a graph which indicates object type using icons and allows you to view connections and navigate your data. Note that hovering on a node (representing a page) will show you a preview of the page, and hovering on a link between two nodes will show you a snippet of the text that establishes the link between the pages.
-
 ## Adding content from external tools
 
 ### Web
@@ -108,10 +99,28 @@ To try it out:
 4. Click it - you should get a new page added in your vault.
 
 ### Spreadsheet format data
-Its also possible to add a link to each row in a spreadsheet (or Open Refine) that will create or open an associated record in Obsidian. This could be useful to integrate tabular data (eg a datafile of specimens) with your working notes on their descriptions (in Obsidian).
+Its also possible to add a link to each row in a spreadsheet (or Open Refine) that will create or open an associated page in Obsidian. This could be useful to integrate tabular data (eg a datafile of specimens) with your working notes on their descriptions (in Obsidian).
 
 >[!tip]- Custom URI protocol "obsidian://"
 >Both the web clipper and spreadsheet integration make use of Obsidian's [custom URL protocol](https://help.obsidian.md/Advanced+topics/Using+obsidian+URI)
+
+## Linking
+tbc
+
+## Visualisations
+
+### Spatial
+
+This vault has a mapping plugin enabled, which can read location coordinates from the frontmatter of pages, and use them to plot points on a map. Open the [[Map]] page to see a map with the collecting event coordinates plotted on it. The markers are active so that clicking on a marker will open the associated page.
+
+### Network
+
+In this example, we've created a small set of pages and established links between them. A graph view can be used to visualise the web of connections. You can open the graph view in one of three ways, by using either:
+
+1. The graph icon in the left hand "ribbon"
+2. The key combination <kbd>Ctrl</kbd> + <kbd>G</kbd>
+3. The command palette, by searching for "graph" and selecting "open graph view"
+
 
 ## Applications
 
