@@ -6,13 +6,23 @@
       {
         "id": "adc92fdd82bbeeb8",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Start here.md",
             "mode": "preview",
             "source": true
-          }
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "d131801a35c0c74e",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -88,14 +98,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -105,8 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
-                "linksCollapsed": true,
+                "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
@@ -116,9 +124,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -130,7 +136,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "2bd970793fcdf771",
@@ -142,7 +148,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -213,17 +218,17 @@
     "direction": "horizontal",
     "width": 353.9287109375
   },
-  "active": "adc92fdd82bbeeb8",
+  "active": "d131801a35c0c74e",
   "lastOpenFiles": [
-    "remote-data/ipni/Myrcia sect. Calyptranthes (Sw.) A.R.Lourenço & E.Lucas.md",
-    "remote-data/ipni/Cola acuminata (P.Beauv.) Schott &amp; Endl..md",
-    "remote-data/ipni/Solanum sanchez-vegae S.Knapp.md",
-    "remote-data/descriptions/Solanum sanchez-vegae.md",
-    "My new species.md",
-    "Four New Vining Species of Solanum (Dulcamaroid Clade) from Montane Habitats in Tropical America 1.md",
-    "remote-data/gbif-occurrences/A. López 8926 - 1981 (BOT).md",
-    "remote-data/gbif-occurrences/A. Sagástegui 16631 - 2001 (Botany).md",
-    "remote-data/gbif-occurrences/J. Mostacero 1326 - 1986 (Botany).md",
-    "remote-data/gbif-occurrences/Abundio Sagástegui Alva 16535 - 2001 (BOT).md"
+    "Kupeantha (Coffeeae, Rubiaceae), a new genus from Cameroon and Equatorial Guinea.md",
+    "remote-data/gbif-occurrences/Sunderland 1539 - 1992 (Herbarium).md",
+    "remote-data/gbif-occurrences/Thomas 3087 - 1984 (BR).md",
+    "Four new species of Capsicum (Solanaceae) from the tropical Andes and an update on the phylogeny of the genus 1.md",
+    "remote-data/gbif-occurrences/Barboza 4821 - 2017 ().md",
+    "Four new species of Capsicum (Solanaceae) from the tropical Andes and an update on the phylogeny of the genus.md",
+    "remote-data/bionomia/Armando Theodoro Hunziker.md",
+    "remote-data/gbif-occurrences/Asplund 20070 - 1956 (VascularPlants).md",
+    "remote-data/bionomia/Raymond Benoist.md",
+    "12225_2021_9991_Article 1..66 - Bongcheewin2022_Article_ARevisionOfGomphostemmaLamiace.pdf.md"
   ]
 }
