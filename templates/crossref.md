@@ -1,8 +1,10 @@
 ---
 doi: "{{DOI}}"
 title: "{{title}}"
-aliases: ["{{DOI}}"]
+aliases: ["{{DOI}}","doi:{{DOI}}"]
 ---
+
+[{{DOI}}](https://dx.doi.org/{{DOI}})
 
 {{title}}
 

@@ -49,6 +49,9 @@ async function start(params, settings) {
       query = null;
   }
   if (!query){
+    query = getFrontmatterDoi();
+  }
+  if (!query){
     query = await getQuery();
     query = query.searchTerms;
   }
@@ -112,6 +115,18 @@ function decodeEntity(inputStr) {
   var textarea = document.createElement("textarea");
   textarea.innerHTML = inputStr;
   return textarea.value;
+}
+
+function getFrontmatterDoi(){
+  var doi;
+  leaf = app.workspace.getUnpinnedLeaf();
+  var filemeta = app.metadataCache.getFileCache(leaf.view.file);
+  if (Object.keys(filemeta).includes("frontmatter")){
+    if (Object.keys(filemeta.frontmatter).includes("doi")){
+      doi = filemeta.frontmatter.doi;
+    }
+  }
+  return doi;
 }
 
 async function getQuery(){

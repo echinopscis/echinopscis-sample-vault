@@ -1,9 +1,9 @@
 ---
-aliases: ["{{fullname}}","{{fullname_abbrev}}"]
+aliases: ["{{{fullname}}}","{{{fullname_abbrev}}}"]
 ipniid: {{id}}
-lsid: {{lsid}}
-title: "{{fullname}}"
-links: "{{linkedFileName}}"
+lsid: urn:lsid:ipni.org:names:{{id}}
+title: "{{{fullname}}}"
+links: "{{{linkedFileName}}}"
 doi: "{{doi}}"
 ---
 
