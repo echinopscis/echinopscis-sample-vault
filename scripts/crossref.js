@@ -50,6 +50,11 @@ async function start(params, settings) {
   }
   if (!query){
     query = getFrontmatterDoi();
+    if (query){
+      if (!await QuickAdd.quickAddApi.yesNoPrompt('Use DOI from frontmatter?')){ 
+        query = null;
+      }
+    } 
   }
   if (!query){
     query = await getQuery();
