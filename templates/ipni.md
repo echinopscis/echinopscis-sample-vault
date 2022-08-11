@@ -1,26 +1,27 @@
 ---
-aliases: ["{{{fullname}}}","{{{fullname_abbrev}}}"]
+aliases: ["{{fullname}}","{{fullname_abbrev}}"]
 ipniid: {{id}}
 lsid: {{lsid}}
-title: "{{{fullname}}}"
-links: "{{{linkedFileName}}}"
+title: "{{fullname}}"
+links: "{{linkedFileName}}"
+doi: "{{doi}}"
 ---
 
 {{fullname}}
 
 {{#if collectorTeam}}
-Collector team: {{{collectorTeam}}} {{collectionNumber}}
+Collector team: {{collectorTeam}} {{collectionNumber}}
 Locality: {{locality}}
 Holotype: {{holotype}}
 Isotypes: {{isotypes}}
 {{/if}}
 
 {{#if basionymId}}
-Basionym: [[{{{linkedFileName}}}]]
+Basionym: [[{{linkedFileName}}]]
 {{/if}}
 
 {{#if basionymOf}}
-Combination: [[{{{linkedFileName}}}]]
+Combination: [[{{linkedFileName}}]]
 {{/if}}
 
 {{#if remarks}}

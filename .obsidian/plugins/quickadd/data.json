@@ -27,6 +27,13 @@
       "type": "Macro",
       "command": true,
       "macroId": "5e742175-b05f-4bdb-9188-7d614873efb3"
+    },
+    {
+      "id": "3fc823ca-bffa-4656-8a76-89e83c6e148f",
+      "name": "Crossref",
+      "type": "Macro",
+      "command": true,
+      "macroId": "1b72863f-e266-445f-9270-32ae10478639"
     }
   ],
   "macros": [
@@ -100,6 +107,24 @@
             "Filename format:": "{{~fullname~}} {{~fn_lifespan~}}",
             "Template file:": "templates/bionomia.md",
             "Destination folder:": "remote-data/bionomia"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Crossref",
+      "id": "1b72863f-e266-445f-9270-32ae10478639",
+      "commands": [
+        {
+          "name": "crossref",
+          "type": "UserScript",
+          "id": "2b57625b-c19a-4114-ab9c-4f1c6adee5ef",
+          "path": "scripts/crossref.js",
+          "settings": {
+            "Filename format:": "{{~title~}}",
+            "Template file:": "templates/crossref.md",
+            "Destination folder:": "remote-data/literature"
           }
         }
       ],

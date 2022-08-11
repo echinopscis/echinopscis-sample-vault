@@ -48,36 +48,29 @@ function init(params, settings) {
 async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
-
-  var query = document.getSelection().toString();
-  if (typeof query != "string"){
-      query = null;
-  }
-  if (!query){
-    query = await getQuery();
-    query = query.searchTerms;
-  }
+  console.log(settings);
+  let query = await getQuery();
   if (!query) {
     notice("No query entered.");
-    throw new Error("No query entered.");
-  }
-
-  console.log(query);
-
-  let possibleNames = await getNamesByQueryParams(query);
-  let selectedName = await promptUserForSelectingSuggestions(possibleNames);
-
-  if (selectedName){
-    if (selectedName.basionymId && Settings[RETRIEVE_LINKED_NAMES]){
-      var basionymName = await getByLsid(selectedName.basionymId);
-      console.log(basionymName);
-      await saveSelectedName(basionymName,selectedName,params, app, false);  
-    }
-    await saveSelectedName(selectedName,basionymName, params, app, true);
+    // throw new Error("No query entered.");
   }
   else{
-    notice("No name selected");
-    // throw new Error("No name selected.");
+    console.log(query.searchTerms);
+    let possibleNames = await getNamesByQueryParams(query.searchTerms);
+    console.log(possibleNames);
+    let selectedName = await promptUserForSelectingSuggestions(possibleNames);
+    if (selectedName){
+      if (selectedName.basionymId && Settings[RETRIEVE_LINKED_NAMES]){
+        var basionymName = await getByLsid(selectedName.basionymId);
+        console.log(basionymName);
+        await saveSelectedName(basionymName,selectedName,params, app, false);  
+      }
+      await saveSelectedName(selectedName,basionymName, params, app, true);
+    }
+    else{
+      notice("No name selected");
+      // throw new Error("No name selected.");
+    }
   }
 }
 
@@ -90,6 +83,16 @@ async function saveSelectedName(selectedName, linkedName, params, app, open){
   selectedName.holotype=extractType(selectedName.typeLocations, 'holotype');
   selectedName.isotypes=extractType(selectedName.typeLocations, 'isotype');
   selectedName.fullname_abbrev = buildAbbreviatedName(selectedName);
+  var doi;
+  console.log(selectedName.remarks);
+  if (selectedName.remarks){
+    doi = selectedName.remarks.split(' ').filter(isDoi);
+    if (doi.length == 1){
+      doi = doi[0].replace(/doi:/i,'')
+    }
+  }
+  selectedName.doi = doi;
+  console.log(doi);
   // Build filename and create file:
   filename_template = Settings[FILENAME_FORMAT];
   fileName = hbrenderer.compileAndRender(filename_template, selectedName);
@@ -103,16 +106,11 @@ async function saveSelectedName(selectedName, linkedName, params, app, open){
   let template = await app.vault.read(template_file);
   // Apply template to name object:
   let rendered = hbrenderer.compileAndRender(template,selectedName);
-  try{
-    createdFile = await params.app.vault.create(fileName, rendered);
-    if (createdFile && open){
-      // Open it:
-      leaf = params.app.workspace.getUnpinnedLeaf();
-      await leaf.openFile(createdFile)  
-    }
-  }
-  catch(Error){
-    notice('Could not create file / already exists');
+  createdFile = await params.app.vault.create(fileName, rendered);
+  // Open it:
+  if (open){
+    leaf = params.app.workspace.getUnpinnedLeaf();
+    await leaf.openFile(createdFile)  
   }
 }
 
@@ -148,6 +146,10 @@ function isIpniId(str) {
     return /^\d+\-[1-3]$/.test(str);
   }
   
+function isDoi(str){
+  return /^doi:[^\s]+$/i.test(str);
+}
+
 function formatTitleForSuggestionList(resultItem) {
     console.log(resultItem)
   return decodeEntity(`${resultItem.name} ${resultItem.authors}`);
@@ -160,16 +162,25 @@ function decodeEntity(inputStr) {
 }
 
 async function getQuery(){
-  return Promise.all([promptUserForSearchTerms()]).then(
-    ([searchTerms]) =>
-      new Promise((resolve, reject) => {
-        if (!searchTerms) {
-          notice("No query entered.");
-          reject(new Error("No query entered."));
-        }
-        resolve({ searchTerms });
-      })
-  );
+  var query = document.getSelection().toString();
+  if (typeof query != "string"){
+      query = null;
+  }
+  if (query){
+    return query;
+  }
+  else{
+    return Promise.all([promptUserForSearchTerms()]).then(
+      ([searchTerms]) =>
+        new Promise((resolve, reject) => {
+          if (!searchTerms) {
+            notice("No query entered.");
+            reject(new Error("No query entered."));
+          }
+          resolve({ searchTerms });
+        })
+    );
+  }
 }
   
 function promptUserForSearchTerms(){
