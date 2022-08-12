@@ -24,7 +24,6 @@ Contains the following plugins:
 |Utility - templating | [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) | |
 |Utility - data querying | [Dataview](https://github.com/blacksmithgu/obsidian-dataview)| |
 |User interface - folder differentiation | [Icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) |[Remix icons](https://remixicon.com/) |
-|User interface - definition of terms | [Dictionary](https://github.com/phibr0/obsidian-dictionary) | |
 
 ## Contributing
 
