@@ -18,15 +18,11 @@
         }
       },
       {
-        "id": "e7058317737f584c",
+        "id": "cc285d86097c3d37",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "templates/ipni.md",
-            "mode": "preview",
-            "source": true
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -229,19 +225,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.9287109375
+    "width": 353.9287109375,
+    "collapsed": true
   },
   "active": "adc92fdd82bbeeb8",
   "lastOpenFiles": [
+    "Glossary.md",
+    "Untitled.md",
+    "Map.md",
+    "Start here.md",
     "templates/ipni.md",
     "templates/grscicoll.md",
     "templates/gbifocc.md",
     "templates/crossref.md",
     "templates/bionomia.md",
-    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (Herbarium).md",
-    "remote-data/ipni/Solanum aspersum S.Knapp.md",
-    "Start here.md",
-    "Map.md",
-    "remote-data/grscicoll/COL(Herbario Nacional Colombiano)-Universidad Nacional de Colombia.md"
+    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (Herbarium).md"
   ]
 }
