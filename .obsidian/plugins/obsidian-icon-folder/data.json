@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "MyScissorsLine",
       "MyPencilLine",
       "MyMap2Line",
       "MyBookmarkLine",
-      "MyBankLine",
-      "MySeedlingLine"
+      "MyBankLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -26,5 +26,6 @@
   "remote-data/ipni": "MyPriceTag3Line",
   "remote-data/literature": "MyBookmarkLine",
   "Map.md": "MyMap2Line",
-  "remote-data/descriptions": "MyPencilLine"
+  "remote-data/descriptions": "MyPencilLine",
+  "remote-data/web-clippings": "MyScissorsLine"
 }
