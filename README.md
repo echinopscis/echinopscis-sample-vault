@@ -3,10 +3,7 @@ A sample [obsidian](https://obsidian.md) vault, preconfigured for biodiversity i
 
 ## How to use
 
-1. [Download](https://github.com/echinopscis/echinopscis-sample-vault/releases/download/v0.0.1/echinopscis.zip) this sample vault (zipped) and extract to a directory on your computer.
-1. [Download](https://obsidian.md/download) and install Obsidian for your operating system. 
-1. Open Obsidian, and select "Open folder as vault". Choose the sample vault that you extracted in step 1.
-1. Explore - or work through the steps listed from the "start here" page.
+See: https://echinopscis.github.io/installation/
 
 ## Contents
 
