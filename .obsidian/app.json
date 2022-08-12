@@ -4,6 +4,10 @@
   "defaultViewMode": "preview",
   "userIgnoreFilters": [
     "scripts/",
-    "templates/"
+    "templates/",
+    "Map",
+    "Start here",
+    "Glossary",
+    "README"
   ]
 }
