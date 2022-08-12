@@ -1,5 +1,5 @@
 ---
-aliases: ["{{recordedBy}} {{recordNumber}}", "{{ffalias}}", "{{catalogNumber}}", "{{{searchterm}}}"]
+aliases: ["{{recordedBy}} {{recordNumber}}", "{{collectingEventAlias}}", "{{catalogNumber}}", "{{{searchterm}}}"]
 title: "{{recordedBy}} {{recordNumber}}"
 gbifid: {{key}}
 {{#if decimalLatitude}}{{#if decimalLongitude}}location: [{{decimalLatitude}},{{decimalLongitude}}]{{/if}}{{/if}}

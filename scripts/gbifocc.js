@@ -11,7 +11,7 @@ const RETRIEVE_LINKED_OCCS = "Retrieve linked occurrences";
 const INTERPRET_NUMBER_AS_RECORDNUMBER = "Interpret numbers as recordnumbers?";
 
 const FILENAME_FORMAT = "Filename format:";
-const FILENAME_FORMAT_DEFAULT = "{{ffalias}} - {{year}} ({{collectionCode}})";
+const FILENAME_FORMAT_DEFAULT = "{{collectingEventAlias}} - {{year}} ({{collectionCode}})";
 
 const ILLEGAL_OBSIDIAN_FILE_NAME_PATTERN = /[\\,#%&\{\}\/*<>?$\'\":@]*/g;
 
@@ -224,7 +224,7 @@ function buildOccurrencesData(occurrence) {
 async function augmentOccurrenceData(occurrence, query){
   const rbFirstFamilyName = await recordedBy2FirstFamilyName(occurrence.recordedBy);
   occurrence.rbFirstFamilyName = rbFirstFamilyName;
-  occurrence.ffalias = `${occurrence.rbFirstFamilyName} ${occurrence.recordNumber}`;
+  occurrence.collectingEventAlias = `${occurrence.rbFirstFamilyName} ${occurrence.recordNumber}`;
 
   const location = formatLocation(occurrence);
   occurrence.location = location;
