@@ -26,6 +26,5 @@
   "remote-data/ipni": "MyPriceTag3Line",
   "remote-data/literature": "MyBookmarkLine",
   "Map.md": "MyMap2Line",
-  "remote-data/descriptions": "MyPencilLine",
-  "remote-data/web-clippings": "MyScissorsLine"
+  "remote-data/descriptions": "MyPencilLine"
 }
