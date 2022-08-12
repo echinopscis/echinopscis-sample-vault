@@ -2,35 +2,35 @@
   "choices": [
     {
       "id": "d299d57a-9df1-4dc1-a8f0-48d5549780f3",
-      "name": "Bionomia",
+      "name": "Collector / determiner profiles (Bionomia)",
       "type": "Macro",
       "command": true,
       "macroId": "21c2fef8-5213-412a-b6ba-813864a52248"
     },
     {
       "id": "cb531a63-4087-4817-97c3-cad7cd697d82",
-      "name": "IPNI",
+      "name": "Scientific names (IPNI)",
       "type": "Macro",
       "command": true,
       "macroId": "2852fc55-3e19-4663-b030-3f28e3a100e0"
     },
     {
       "id": "9115266a-956b-4ea0-aad7-7ad0b9e18fb8",
-      "name": "GBIF occurrences",
+      "name": "Specimen occurrences (GBIF)",
       "type": "Macro",
       "command": true,
       "macroId": "13defa85-7ea9-489d-a52d-dbe393e46af1"
     },
     {
       "id": "01002e67-3200-47ab-bb21-dc069cc97902",
-      "name": "GRSciColl",
+      "name": "Collection profiles (Index Herbariorum via GRSciColl)",
       "type": "Macro",
       "command": true,
       "macroId": "5e742175-b05f-4bdb-9188-7d614873efb3"
     },
     {
       "id": "3fc823ca-bffa-4656-8a76-89e83c6e148f",
-      "name": "Crossref",
+      "name": "Literature (Crossref)",
       "type": "Macro",
       "command": true,
       "macroId": "1b72863f-e266-445f-9270-32ae10478639"
