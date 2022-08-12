@@ -6,4 +6,10 @@ aliases: ["{{code}}"]
 {{code}}
 {{name}}
 
+## Tags
+
 #collection
+
+--- 
+
+## Local notes

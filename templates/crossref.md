@@ -12,4 +12,10 @@ aliases: ["{{DOI}}","doi:{{DOI}}"]
 
 Publisher: {{publisher}}
 
+## Tags
+
 #reference
+
+---
+
+## Local notes

@@ -11,4 +11,10 @@ aliases: ["{{{query}}}"]
 
 {{lifespan}}
 
+## Tags
+
 #person
+
+---
+
+## Local notes

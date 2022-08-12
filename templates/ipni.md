@@ -43,4 +43,10 @@ Combination: [[{{linkedFileName}}]]
 {{remarks}}
 {{/if}}
 
+## Tags
+
 #name
+
+---
+
+## Local notes

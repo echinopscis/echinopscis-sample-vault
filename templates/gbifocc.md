@@ -10,11 +10,31 @@ gbifid: {{key}}
 
 --- 
 
+## Holder
+
+institutionCode: {{institutionCode}}
+collectionCode: {{collectionCode}}
+
+## Collecting event
+
+recordedBy: {{{recordedBy}}}
+recordNumber: {{recordNumber}}
+eventDate: {{eventDate}}
+
+## Media
+
 {{{imageZoomUrl}}}
+
+## Links
 
 [{{key}}](https://gbif.org/occurrence/{{key}})
 
+## Tags
 
-#occurrence
+#occurrence/{{basisOfRecord}}
 
 {{#if typeStatus}}#type/{{typeStatus}}{{/if}}
+
+---
+
+## Local notes
