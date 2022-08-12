@@ -19,7 +19,7 @@ doi: "{{doi}}"
 
 {{#if collectorTeam}}
 ## Type information
-Collector team: {{collectorTeam}} {{collectionNumber}}
+Collector team: {{{collectorTeam}}} {{collectionNumber}}
 {{#if collectionDate1}}
 Collection date: {{collectionDate1s}}
 {{/if}}
