@@ -1,0 +1,7 @@
+remote-data/**/*.md
+**/*.md
+!Glossary.md
+!Map.md
+!README.md
+!Start\ here.md
+!templates/*.md
