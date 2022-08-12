@@ -173,7 +173,7 @@ async function getCollectionsByQueryParams(queryParams) {
 /**
  *
  * @param {object} queryParams
- * @returns {string} The query string for requests to musicbrainz API.
+ * @returns {string} The query string for requests to grscicoll API.
  */
 function buildQueryString(queryParam) {
   return queryParam;
