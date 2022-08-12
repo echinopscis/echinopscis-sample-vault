@@ -47,7 +47,7 @@
           "id": "aed43b18-e6ab-4c09-8524-bb81e7c8f96b",
           "path": "scripts/gbifocc.js",
           "settings": {
-            "Filename format:": "{{ffalias}} - {{year}} ({{collectionCode}})",
+            "Filename format:": "{{collectingEventAlias}} - {{year}} ({{collectionCode}})",
             "Template file:": "templates/gbifocc.md",
             "Destination folder:": "remote-data/gbif-occurrences",
             "Retrieve linked occurrences": true,
