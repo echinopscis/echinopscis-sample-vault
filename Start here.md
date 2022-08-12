@@ -63,10 +63,6 @@ Again, the system will create a new page in your vault, holding the details of t
 >[!tip]- Backlinks
 >Obsidian tries to facilitate linking by showing you what links to your current page ("backlinks"). These can be seen in the right hand pane (the backlink pane can be shown using the command palette - hit <kbd>Ctrl</kbd>+<kbd>P</kbd> and type "backlink", then select "Show backlinks pane"). As well as actual links, the system will also propose links, eg if it finds the title text of your current page embedded in another page's content. 
 
-## Term definitions
-
-Species descriptions use precise language and a whole set of technical terms. This sample vault has a term dictionary that can be used to give definitions. To view a term definition, highlight a term - e.g. "spinose", right click and select "look up" - a definition pane will open on the right hand side of the screen.
-
 ## People (authors, collectors, determiners etc)
 
 The previous steps have added a name and a specimen. These entities were both created by people, performing different roles:

@@ -18,11 +18,15 @@
         }
       },
       {
-        "id": "d131801a35c0c74e",
+        "id": "e7058317737f584c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "templates/ipni.md",
+            "mode": "preview",
+            "source": true
+          }
         }
       }
     ],
@@ -45,12 +49,24 @@
             }
           },
           {
+            "id": "f75a94fc22446394",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Glossary.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
             "id": "60729263a74b09ef",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#occurrence -tag:#type",
+                "query": "tag:#occurrence/PRESERVED_SPECIMEN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,12 +114,13 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Start here.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -114,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Start here.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -124,19 +142,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "d3194ccbb565b744",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {}
+              "state": {
+                "file": "Start here.md"
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "2bd970793fcdf771",
@@ -148,6 +160,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Start here.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -218,17 +231,17 @@
     "direction": "horizontal",
     "width": 353.9287109375
   },
-  "active": "d131801a35c0c74e",
+  "active": "adc92fdd82bbeeb8",
   "lastOpenFiles": [
-    "Kupeantha (Coffeeae, Rubiaceae), a new genus from Cameroon and Equatorial Guinea.md",
-    "remote-data/gbif-occurrences/Sunderland 1539 - 1992 (Herbarium).md",
-    "remote-data/gbif-occurrences/Thomas 3087 - 1984 (BR).md",
-    "Four new species of Capsicum (Solanaceae) from the tropical Andes and an update on the phylogeny of the genus 1.md",
-    "remote-data/gbif-occurrences/Barboza 4821 - 2017 ().md",
-    "Four new species of Capsicum (Solanaceae) from the tropical Andes and an update on the phylogeny of the genus.md",
-    "remote-data/bionomia/Armando Theodoro Hunziker.md",
-    "remote-data/gbif-occurrences/Asplund 20070 - 1956 (VascularPlants).md",
-    "remote-data/bionomia/Raymond Benoist.md",
-    "12225_2021_9991_Article 1..66 - Bongcheewin2022_Article_ARevisionOfGomphostemmaLamiace.pdf.md"
+    "templates/ipni.md",
+    "templates/grscicoll.md",
+    "templates/gbifocc.md",
+    "templates/crossref.md",
+    "templates/bionomia.md",
+    "remote-data/gbif-occurrences/Hutchison 5738 - 1964 (Herbarium).md",
+    "remote-data/ipni/Solanum aspersum S.Knapp.md",
+    "Start here.md",
+    "Map.md",
+    "remote-data/grscicoll/COL(Herbario Nacional Colombiano)-Universidad Nacional de Colombia.md"
   ]
 }
