@@ -62,7 +62,7 @@ async function start(params, settings) {
   let possibleProfiles = await getProfilesByQueryParams(query);
   let selectedProfile = await promptUserForSelectingSuggestions(possibleProfiles);
   if (selectedProfile){
-    selectedProfile.lifespan = cleanLifeSpan(selectedProfile.lifespan);
+    selectedProfile = await augmentProfileData(selectedProfile, query);
     // Read in template as defined in settings:
     let template_file = app.vault.getAbstractFileByPath(Settings[TEMPLATE]);
     let template = await app.vault.read(template_file);
@@ -89,6 +89,12 @@ async function start(params, settings) {
     notice("No profile selected");
     throw new Error("No profile selected.");
   }
+}
+
+async function augmentProfileData(selectedProfile, query){
+  selectedProfile.lifespan = cleanLifeSpan(selectedProfile.lifespan);
+  selectedProfile.query = query;
+  return selectedProfile;
 }
 
 function formatTitleForSuggestionList(resultItem) {
