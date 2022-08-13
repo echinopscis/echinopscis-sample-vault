@@ -9,19 +9,19 @@ See: https://echinopscis.github.io/installation/
 
 Contains the following plugins:
 
-|Function |Plugin / script | Dependencies |
-|-|-|-|
-|Scripted access to remote resources |[QuickAdd](https://github.com/chhoumann/quickadd)| |
-|Data access - botanical names | [IPNI](#ipni-names) | [QuickAdd](https://github.com/chhoumann/quickadd), [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-|Data access - specimen occurrences | [GBIF](#gbif-mediated-occurrences) | [QuickAdd](https://github.com/chhoumann/quickadd), [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-|Data access - people | [Bionomia](#bionomia-profiles) | [QuickAdd](https://github.com/chhoumann/quickadd), [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-|Data access - institutions | [Global Registry of Scientific Collections](#global-registry-of-scientific-collections) | [QuickAdd](https://github.com/chhoumann/quickadd), [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-|Data access - literature | [Crossref](#crossref-literature) | [QuickAdd](https://github.com/chhoumann/quickadd), [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) |
-|Visualisation - spatial | [Leaflet](https://github.com/valentine195/obsidian-leaflet-plugin) | [Dataview](https://github.com/blacksmithgu/obsidian-dataview) |
-|Utility - templating | [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) | |
-|Utility - data querying | [Dataview](https://github.com/blacksmithgu/obsidian-dataview)| |
-|User interface - folder differentiation | [Icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) |[Remix icons](https://remixicon.com/) |
-
+- Scripted access to remote information resources: [QuickAdd](https://github.com/chhoumann/quickadd)
+    
+    These scripts are all managed in this repository (details in section below), and all have a dependency on [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin) for templating
+    - Botanical names: [IPNI](#ipni-names)
+    - Specimen occurrences: [GBIF](#gbif-mediated-occurrences)   
+    - Person profiles: [Bionomia](#bionomia-profiles)   
+    - Collection profiles: [Global Registry of Scientific Collections](#global-registry-of-scientific-collections)   
+    - Literature: [Crossref](#crossref-literature)   
+ - Visualisation - spatial: [Leaflet](https://github.com/valentine195/obsidian-leaflet-plugin) 
+ - Utility - templating: [handlebar-helper](https://github.com/echinopscis/obsidian-handlebar-helper-plugin)
+ - Utility - data querying: [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
+ - User interface - folder differentiation: [Icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) (uses a subset of [remix icons](https://remixicon.com/))
+ 
 ### QuickAdd scripts
 
 These [QuickAdd](https://github.com/chhoumann/quickadd) scripts access frequently used biodiversity informatics resources to create representative pages in an [Obsidian](https://obsidian.md) vault, so that the user can:
