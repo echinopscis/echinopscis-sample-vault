@@ -46,7 +46,7 @@ async function start(params, settings) {
   QuickAdd = params;
   Settings = settings;
 
-  var query = document.getSelection().toString();
+  var query = activeDocument.getSelection().toString();
   if (typeof query != "string"){
       query = null;
   }

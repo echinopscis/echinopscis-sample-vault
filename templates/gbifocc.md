@@ -10,6 +10,11 @@ gbifid: {{key}}
 
 --- 
 
+{{#if imageZoomUrl}}
+## Media
+{{{imageZoomUrl}}}
+{{/if}}
+
 ## Holder
 
 institutionCode: {{institutionCode}}
@@ -20,10 +25,6 @@ collectionCode: {{collectionCode}}
 recordedBy: {{{recordedBy}}}
 recordNumber: {{recordNumber}}
 eventDate: {{eventDate}}
-
-## Media
-
-{{{imageZoomUrl}}}
 
 ## Links
 
