@@ -1,10 +1,10 @@
 ## Welcome
 
-This is the sample [[Glossary#Vault|vault]] for "echinopscis" - an experiment in creating an extensible notebook for open science.
+This is the sample *vault* for "echinopscis" - an experiment in creating an extensible notebook for open science.
 
-These instructions are a [[Glossary#Page|page]] in Obsidian, formatted in Markdown and located on your local computer. You can edit this page - toggle between view and edit mode using <kbd>Ctrl</kbd>+<kbd>E</kbd>. 
+These instructions are a *page* in Obsidian, formatted in Markdown and located on your local computer. You can edit this page - toggle between view and edit mode using <kbd>Ctrl</kbd>+<kbd>E</kbd>. 
 
-By default these instructions are "pinned" so that they will always be visible as we create new pages. Any new pages that you create or open by navigating a link will open in a separate pane to the right.
+By default these instructions are "pinned" so that they will always be visible as we create new pages. Any new pages that you create or open by navigating a link will open in a separate *pane* to the right.
 
 ## About this demonstration
 
