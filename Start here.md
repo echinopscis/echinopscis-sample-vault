@@ -51,14 +51,26 @@ As well as selecting the quickadd command via the command palette and then typin
 We can use the DOI associated with an IPNI record to retrieve metadata about the containing article in which the nomenclatural act was published, using a quickadd script that accesses [crossref](https://crossref.org). This is available through the command palette, by searching for "crossref".
 It will first try to use the DOI from the frontmatter, but you can also choose to enter search terms (either a DOI or keywords from the title and authors etc). As described above, you can also highlight text and search for it in crossref. If you select an article, a new page is added, and its tagged as a reference.
 
+## Navigation
+
+Return to the name page that you created in the step above. You can use the keyboard to navigate backwards (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+ left arrow) and forwards (<kbd>Ctrl</kbd>+<kbd>Alt</kbd> + right arrow) between files, or you can use <kbd>Ctrl</kbd>+<kbd>o</kbd> to open a searchable list of files and select one to open.
+
 ## Specimens
 One thing an author does when publishing a new plant name is to cite the type specimens that they have selected. Many specimens are now digitised and available in GBIF so we will next search for the specimens using the collector name and number. This is available in the IPNI record, so we can highlight the text and use it as our search term. 
 
 1. Open the command palette using the key combination <kbd>Ctrl</kbd>+<kbd>P</kbd> and search for the GBIF occurrence plugin by typing "GBIF". Select it by hitting return.
 2. Type in an occurrence search, e.g. "Cuatrecasas 11471"
-3. Select an entry from the list of GBIF occurrences shown
+3. Select an entry from the list of GBIF occurrences shown - choose the one in the US herbarium
 
 Again, the system will create a new page in your vault, holding the details of the specimen as mobilised through GBIF. If an image is available, this will be shown with zoom / pan functions etc. 
+
+## Viewing actual and potential links between names and specimens
+Now return to the name page that you created. If you have used the examples provided so far - ie the name "Solanum aspersum" and the type material "Cuatrecasas 11471" from the US herbarium, the system should detect a potential link in the text of the pages. You can view these link suggestions from either direction: 
+
+- "backlinks" shows you actual and potential links **to** the current page
+- "outgoing links" shows you actual and potential links **from** the current page
+
+Both of these are shown in the link pane on the right, or they can be opened using the command palette.
 
 >[!tip]- Backlinks
 >Obsidian tries to facilitate linking by showing you what links to your current page ("backlinks"). These can be seen in the right hand pane (the backlink pane can be shown using the command palette - hit <kbd>Ctrl</kbd>+<kbd>P</kbd> and type "backlink", then select "Show backlinks pane"). As well as actual links, the system will also propose links, eg if it finds the title text of your current page embedded in another page's content. 
