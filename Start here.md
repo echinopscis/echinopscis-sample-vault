@@ -137,7 +137,7 @@ We think that this could contribute to the digital extended specimen effort in t
 You can read about the phases of work that we would like to follow at: https://echinopscis.github.io/roadmap/
 
 ## Other resources
-You can find a list of useful resources from users and developers of Obsidian at: https://echinopscis.github.io/roadmap/
+You can find a list of useful resources from users and developers of Obsidian at: https://echinopscis.github.io/resources/
 ## Contributing
 
 We're interested in all kinds of contributions (not just technical ones) - see some suggestions at: https://echinopscis.github.io/contributing/
