@@ -41,7 +41,7 @@ We can use these to connect more resources and propose links.
 >[!tip]- Frontmatter
 > See more about frontmatter in the [Obsidian help pages](https://help.obsidian.md/Advanced+topics/YAML+front+matter)
 
-Note: if you select to add a name from IPNI that is a combination - the linked basionym record will also be added and the two name pages will be linked together. (Making this work in the other direction, from a basionym to potentially multiple later combinations, is [planned but not yet implemented](https://github.com/echinopscis/echinopscis-quickadd/issues/7))
+Note: if you select to add a name from IPNI that is a combination - the linked basionym record will also be added and the two name pages will be linked together. (Making this work in the other direction, from a basionym to potentially multiple later combinations, is [planned but not yet implemented](https://github.com/echinopscis/echinopscis-sample-vault/issues/19))
 
 ## Shortcuts - using highlighted text to search
 As well as selecting the quickadd command via the command palette and then typing in a name - you can also highlight some text, then when you select the IPNI command, this will be passed into the search function so you don't have to retype it. This "search using highlighted text" function is available for each of the biodiversity informatics quickadd scripts in the sample vault, i.e. names (from IPNI), specimens (GBIF-mediated occurrences), person profiles (from Bionomia), collections (from GRSciColl) and literature (from Crossref).
