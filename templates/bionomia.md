@@ -2,7 +2,7 @@
 {{#if orcid}}ORCID: {{orcid}}{{/if}}
 {{#if wikidata}}Wikidata: {{wikidata}}{{/if}}
 uri: {{uri}}
-aliases: [{{other_names}}]
+aliases: [{{#if other_names}}{{#each other_names}} "{{this}}",{{/each}}{{/if}} "{{query}}"]
 ---
 
 # {{fullname}}
