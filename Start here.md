@@ -132,9 +132,9 @@ If you are researching specimens, this kind of workflow may be useful to indicat
 We've seen that this software toolkit simplifies the access and linking of specimen related resources.
 We think that this could contribute to the digital extended specimen effort in two ways: firstly, a greater awareness of how resources can be explored when they are linked should help embed the concept and gain community support. On a more practical level, the actual links made - in context, by expert researchers - could be useful to help integrate data and form the connections necessary to realise the digital extended specimen.
 
-## Roadmap
+## Project overview and roadmap
 
-You can read about the phases of work that we would like to follow at: https://echinopscis.github.io/roadmap/
+You can see a single page overview of the project at:  https://echinopscis.github.io/open-canvas/ and read about the phases of work that we would like to follow at: https://echinopscis.github.io/roadmap/
 
 ## Other resources
 You can find a list of useful resources from users and developers of Obsidian at: https://echinopscis.github.io/resources/
