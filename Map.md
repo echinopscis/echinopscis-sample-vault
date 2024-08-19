@@ -11,4 +11,7 @@ scale: 1
 darkMode: false
 markerFolder: /remote-data
 markerTag: occurrence
+osmLayer: false
+tileServer: https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
+tileSubdomains: 1,2,3
 ```
