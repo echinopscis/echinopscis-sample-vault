@@ -1,11 +1,14 @@
 ---
-aliases: ["{{{fullname}}}","{{{fullname_abbrev}}}"]
-ipniid: {{id}}
-lsid: urn:lsid:ipni.org:names:{{id}}
+aliases:
+  - "{{{fullname}}}"
+  - "{{{fullname_abbrev}}}"
+ipni_name_id: "{{id}}"
+lsid: urn:lsid:ipni.org:names:{{{id}}}
 title: "{{{fullname}}}"
 links: "{{{linkedFileName}}}"
-doi: "{{doi}}"
+protologue_doi: "{{doi}}"
 ---
+
 ## Reference
 
 {{fullname}} 
